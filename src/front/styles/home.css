@@ -5,8 +5,8 @@ body {
 /* Media query para ajustar el diseño en pantallas más grandes */
 @media only screen and (min-width: 992px) {
   body {
-    width: 400px;
-    height: 100vw;
+    width: 500px;
+    height: 100%;
     margin: auto;
     background-color: #282c34;
   }

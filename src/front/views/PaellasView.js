@@ -4,56 +4,66 @@ import Card from "../components/Card";
 import { AppContext } from "../store/appContext.js";
 
 const PaellasView = () => {
-  const title = "Paellas";
+  const titles = {
+    spanishTitle: "Paellas",
+    englishTitle: "Paellas",
+    frenchTitle: "Paëllas",
+    italianTitle: "Paelle"
+};
 
   const { store, actions } = useContext(AppContext);
 
   const defineTitle = (titles) => {
     switch (store.language) {
       case "spanish":
-        return titles.spanish;
+        return titles.spanishTitle;
       case "english":
-        return titles.english;
+        return titles.englishTitle;
       case "french":
-        return titles.french;
+        return titles.frenchTitle;
       case "italian":
-        return titles.italian;
+        return titles.italianTitle;
       default:
-        return titles.spanish;
+        return titles.spanishTitle;
     }
   };
 
   const paellasDB = [
     {
-      name: "Paella de Mariscos",
+      nameSpanish: "Paella de Mariscos",
       nameEnglish: "Seafood Paella",
-      nameFrench: "Paella au Fruits de Mer",
+      nameFrench: "Paella aux Fruits de Mer",
+      nameItalian: "Paella di Frutti di Mare",
       price: "27.00",
-      image: "./images/paella-mariscos.png",
+      image: "../image/paella-mariscos.png",
     },
     {
-      name: "Paella de Verduras",
-      nameEnglish: "Vegetables Paella",
-      nameFrench: "Paëlla Aux Légumes",
+      nameSpanish: "Paella de Verduras",
+      nameEnglish: "Vegetable Paella",
+      nameFrench: "Paella Aux Légumes",
+      nameItalian: "Paella di Verdure",
       price: "22.00",
-      image: "./images/paella-verduras.png",
+      image: "../image/paella-verduras.png",
     },
     {
-      name: "Arroz Negro",
-      nameEnglish: "Black Rise",
+      nameSpanish: "Arroz Negro",
+      nameEnglish: "Black Rice",
+      nameFrench: "Riz Noir",
+      nameItalian: "Riso Nero",
       price: "27.00",
-      image: "./images/arroz-negro.png",
+      image: "../image/arroz-negro.png",
     },
-  ];
+];
+
 
   return (
     <>
-      <div className="title text-center py-4 bg-white">{title}</div>
+      <div className="title text-center py-4 bg-white">{defineTitle(titles)}</div>
       <div className="container pb-3rem">
         <div className="row mt-3">
-          {paellasDB.map((dish, index) => (
-            <div className="col-12 col-lg-12 col-md-6 mb-4">
-              <Card key={index} name={dish.name} price={dish.price} />
+          {paellasDB.map((paella, index) => (
+            <div key={index} className="col-12 col-lg-12 col-md-6 mb-4">
+              <Card product={paella}/>
             </div>
           ))}
         </div>

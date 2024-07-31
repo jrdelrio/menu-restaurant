@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../styles/views.css";
+import "../styles/language-box.css";
 import { AppContext } from "../store/appContext.js";
 
 import spainLogo from "../icons/languages/spain.png";
@@ -39,19 +39,23 @@ const WelcomeView = () => {
 
   return (
     <>
-      <div className="title text-center py-4 bg-white">{defineTitle(titles)}</div>
-      <div className="language-selection-container">
-        <div className="language-icon" onClick={() => handleClick("spanish")}>
-          <img src={spainLogo} alt="Spanish" />
-        </div>
-        <div className="language-icon" onClick={() => handleClick("english")}>
-          <img src={englandLogo} alt="English" />
-        </div>
-        <div className="language-icon" onClick={() => handleClick("french")}>
-          <img src={frenchLogo} alt="French" />
-        </div>
-        <div className="language-icon" onClick={() => handleClick("italian")}>
-          <img src={italyLogo} alt="Italian" />
+      <div className="title text-center py-4 bg-white">
+        {defineTitle(titles)}
+      </div>
+      <div className="welcome-view-container">
+        <div className="language-selection-container">
+          <div className="language-icon" onClick={() => handleClick("spanish")}>
+            <img src={spainLogo} alt="Spanish" />
+          </div>
+          <div className="language-icon" onClick={() => handleClick("english")}>
+            <img src={englandLogo} alt="English" />
+          </div>
+          <div className="language-icon" onClick={() => handleClick("french")}>
+            <img src={frenchLogo} alt="French" />
+          </div>
+          <div className="language-icon" onClick={() => handleClick("italian")}>
+            <img src={italyLogo} alt="Italian" />
+          </div>
         </div>
       </div>
     </>
