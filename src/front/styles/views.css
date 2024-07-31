@@ -1,0 +1,51 @@
+.title {
+    background-color: yellow;
+    font-family: fantasy;
+    font-size: 2rem;
+}
+
+.sub-title {
+    background-color: rgb(244, 255, 181);
+    font-family: fantasy;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.pb-3rem {
+    padding-bottom: 3rem;
+}
+
+.language-selection-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 23rem;
+    /* Adjust size as needed */
+    height: 23rem;
+    /* Adjust size as needed */
+    margin: 0 auto;
+    margin-top: 30%;
+    border: white 1px solid;
+    border-radius: 15%;
+}
+
+.language-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.language-icon img {
+    width: 80%;
+    /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+.language-icon:hover {
+    transform: scale(1.1);
+}

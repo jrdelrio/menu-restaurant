@@ -1,0 +1,13 @@
+body {
+  background-color: #282c34;
+}
+
+/* Media query para ajustar el diseño en pantallas más grandes */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 400px;
+    height: 100vw;
+    margin: auto;
+    background-color: #282c34;
+  }
+}
