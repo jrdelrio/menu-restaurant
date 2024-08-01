@@ -37,7 +37,7 @@ import moscowMule from "../images/moscow-mule.png";
 import espressoMartini from "../images/espresso-martini.png";
 
 const DrinksView = () => {
-  const { store } = useContext(AppContext);
+  const { store, actions } = useContext(AppContext);
 
   const titles = {
     title: {
@@ -449,7 +449,7 @@ const DrinksView = () => {
         return {
           title: item.title.titleEnglish,
           subTitle1: item.subTitle1.titleEnglish,
-          subTitle2: item.ubTitle2.titleEnglish,
+          subTitle2: item.subTitle2.titleEnglish,
           subTitle3: item.subTitle3.titleEnglish,
         };
       case "french":
