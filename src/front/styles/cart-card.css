@@ -1,0 +1,25 @@
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.grid-container img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: grid;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 0 !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+article input[type='number'] {
+    border: none;
+}
