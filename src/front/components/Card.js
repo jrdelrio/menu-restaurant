@@ -81,12 +81,12 @@ const Card = (props) => {
                     </p>
                     <div className="functions">
                       <i
-                        className="fa-solid fa-cart-shopping me-3"
+                        className="fa-solid fa-cart-shopping me-3 hover-pink"
                         onClick={handleClickCart}
                       ></i>
 
                       <i
-                        className="fa-solid fa-circle-info me-2"
+                        className="fa-solid fa-circle-info me-2 hover-pink"
                         onClick={() => setInfoShow(true)}
                       ></i>
                     </div>
