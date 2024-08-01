@@ -440,28 +440,28 @@ const DrinksView = () => {
     switch (store.language) {
       case "spanish":
         return {
-          title: item.titleSpanish,
+          title: item.title.titleSpanish,
           subTitle1: item.subTitle1.titleSpanish,
           subTitle2: item.subTitle2.titleSpanish,
           subTitle3: item.subTitle3.titleSpanish,
         };
       case "english":
         return {
-          title: item.titleEnglish,
+          title: item.title.titleEnglish,
           subTitle1: item.subTitle1.titleEnglish,
-          subTitle2: item.subTitle2.titleEnglish,
+          subTitle2: item.ubTitle2.titleEnglish,
           subTitle3: item.subTitle3.titleEnglish,
         };
       case "french":
         return {
-          title: item.titleFrench,
+          title: item.title.titleFrench,
           subTitle1: item.subTitle1.titleFrench,
           subTitle2: item.subTitle2.titleFrench,
           subTitle3: item.subTitle3.titleFrench,
         };
       case "italian":
         return {
-          title: item.titleItalian,
+          title: item.title.titleItalian,
           subTitle1: item.subTitle1.titleItalian,
           subTitle2: item.subTitle2.titleItalian,
           subTitle3: item.subTitle3.titleItalian,

@@ -6,6 +6,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 const NavbarButton = (props) => {
   const { store, actions } = useContext(AppContext);
 
+  console.log(store)
+
   const handleClick = () => {
     actions.setCurrentTab(props.tag);
   };
@@ -44,6 +46,7 @@ const NavbarButton = (props) => {
       className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group navbar-tab"
       data-target="folder-content-tapas"
       onClick={handleClick}
+      disabled={!store.language}
     >
       {selectIcon(icon)}
     </button>
