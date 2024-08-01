@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/menu-restaurant/static/css/main.41850bf2.css",
-    "main.js": "/menu-restaurant/static/js/main.9fb9c6c3.js",
+    "main.js": "/menu-restaurant/static/js/main.fbb16971.js",
     "static/js/453.431aec73.chunk.js": "/menu-restaurant/static/js/453.431aec73.chunk.js",
     "static/media/generic-tapa.jpg": "/menu-restaurant/static/media/generic-tapa.272fbd94d0fcef982d1e.jpg",
     "static/media/mojito.png": "/menu-restaurant/static/media/mojito.9995326a93dc777b13be.png",
@@ -75,11 +75,11 @@
     "static/media/fa-v4compatibility.woff2": "/menu-restaurant/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/menu-restaurant/index.html",
     "main.41850bf2.css.map": "/menu-restaurant/static/css/main.41850bf2.css.map",
-    "main.9fb9c6c3.js.map": "/menu-restaurant/static/js/main.9fb9c6c3.js.map",
+    "main.fbb16971.js.map": "/menu-restaurant/static/js/main.fbb16971.js.map",
     "453.431aec73.chunk.js.map": "/menu-restaurant/static/js/453.431aec73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41850bf2.css",
-    "static/js/main.9fb9c6c3.js"
+    "static/js/main.fbb16971.js"
   ]
 }
