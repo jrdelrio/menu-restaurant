@@ -10,7 +10,7 @@ import calamaresImg from "../images/calamares.png";
 import rabasImg from "../images/rabas.png";
 import sardinasImg from "../images/sardinas.png";
 import gambasImg from "../images/gambas.png";
-import genericTapaImg from "../images/generic-tapa.jpg";
+import pulpoGallega from "../images/pulpo-gallega.png";
 import choricitosImg from "../images/choricitos.png";
 import laconImg from "../images/lacon.png";
 import tortillaImg from "../images/tortilla.png";
@@ -152,7 +152,7 @@ const DishesView = () => {
       nameFrench: "Poulpe Cuit à la Vapeur",
       nameItalian: "Polpo alla Gallega",
       price: "13.95",
-      image: genericTapaImg,
+      image: pulpoGallega,
       descriptionSpanish:
         "Pulpo tierno servido con pimentón, sal y aceite de oliva.",
       descriptionEnglish:
@@ -214,22 +214,6 @@ const DishesView = () => {
       nameItalian: "Funghi in Salsa di Sherry",
       price: "5.85",
       image: champinonesImg,
-      descriptionSpanish:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-      descriptionEnglish:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-      descriptionFrench:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-      descriptionItalian:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-    },
-    {
-      nameSpanish: "Gyozas de Verduras",
-      nameEnglish: "Vegetable Gyozas",
-      nameFrench: "Gyozas aux Légumes",
-      nameItalian: "Gyozas di Verdure",
-      price: "6.50",
-      image: genericTapaImg,
       descriptionSpanish:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
       descriptionEnglish:

@@ -3,6 +3,13 @@ import "../styles/views.css";
 import Card from "../components/Card";
 import { AppContext } from "../store/appContext.js";
 
+import cremaCatalana from '../images/crema-catalana.png';
+import strudel from '../images/strudel.png';
+import helado from '../images/helado.png';
+import tartaSantiago from '../images/tarta-santiago.jpeg';
+import churrosChocolate from '../images/churros-chocolate.jpeg';
+import flanHuevo from '../images/flan-huevo.jpeg';
+
 const DessertsView = () => {
   const { store, actions } = useContext(AppContext);
 
@@ -20,7 +27,15 @@ const DessertsView = () => {
       nameFrench: "Crème Catalane",
       nameItalian: "Crema Catalana",
       price: "5.50",
-      image: "./images/crema-catalana.png",
+      image: cremaCatalana,
+      descriptionSpanish:
+        "Deliciosa crema catalana con una capa de azúcar caramelizado.",
+      descriptionEnglish:
+        "Delicious Catalan cream with a layer of caramelized sugar.",
+      descriptionFrench:
+        "Délicieuse crème catalane avec une couche de sucre caramélisé.",
+      descriptionItalian:
+        "Deliziosa crema catalana con uno strato di zucchero caramellato.",
     },
     {
       nameSpanish: "Strudel de Manzana",
@@ -28,7 +43,13 @@ const DessertsView = () => {
       nameFrench: "Strudel aux Pommes",
       nameItalian: "Strudel di Mele",
       price: "5.50",
-      image: "./images/strudel.png",
+      image: strudel,
+      descriptionSpanish:
+        "Strudel de manzana con un relleno dulce y especiado.",
+      descriptionEnglish: "Apple strudel with a sweet and spiced filling.",
+      descriptionFrench:
+        "Strudel aux pommes avec un remplissage sucré et épicé.",
+      descriptionItalian: "Strudel di mele con un ripieno dolce e speziato.",
     },
     {
       nameSpanish: "Helado",
@@ -36,15 +57,14 @@ const DessertsView = () => {
       nameFrench: "Glace",
       nameItalian: "Gelato",
       price: "5.50",
-      image: "./images/helado.png",
-    },
-    {
-      nameSpanish: "Sorbet de Limón con Cava",
-      nameEnglish: "Lemon Sorbet with Cava",
-      nameFrench: "Sorbet Citron au Cava",
-      nameItalian: "Sorbetto al Limone con Cava",
-      price: "5.50",
-      image: "./images/generic-tapa.jpg",
+      image: helado,
+      descriptionSpanish:
+        "Delicioso helado cremoso disponible en varios sabores.",
+      descriptionEnglish:
+        "Delicious creamy ice-cream available in various flavors.",
+      descriptionFrench:
+        "Délicieuse glace crémeuse disponible en plusieurs saveurs.",
+      descriptionItalian: "Delizioso gelato cremoso disponibile in vari gusti.",
     },
     {
       nameSpanish: "Tarta de Santiago",
@@ -52,7 +72,11 @@ const DessertsView = () => {
       nameFrench: "Gâteau de Santiago",
       nameItalian: "Torta di Santiago",
       price: "5.00",
-      image: "./images/tarta-santiago.png",
+      image: tartaSantiago,
+      descriptionSpanish: "Tradicional tarta de almendra gallega.",
+      descriptionEnglish: "Traditional Galician almond cake.",
+      descriptionFrench: "Gâteau traditionnel aux amandes de Galice.",
+      descriptionItalian: "Tradizionale torta di mandorle galiziana.",
     },
     {
       nameSpanish: "Churros con Chocolate",
@@ -60,7 +84,11 @@ const DessertsView = () => {
       nameFrench: "Churros au Chocolat",
       nameItalian: "Churros con Cioccolato",
       price: "4.50",
-      image: "./images/churros-chocolate.png",
+      image: churrosChocolate,
+      descriptionSpanish: "Churros crujientes servidos con chocolate caliente.",
+      descriptionEnglish: "Crispy churros served with hot chocolate.",
+      descriptionFrench: "Churros croustillants servis avec du chocolat chaud.",
+      descriptionItalian: "Churros croccanti serviti con cioccolato caldo.",
     },
     {
       nameSpanish: "Flan de Huevo",
@@ -68,7 +96,11 @@ const DessertsView = () => {
       nameFrench: "Flan aux Œufs",
       nameItalian: "Flan all'Uovo",
       price: "3.50",
-      image: "./images/flan-huevo.png",
+      image: flanHuevo,
+      descriptionSpanish: "Clásico flan de huevo con caramelo.",
+      descriptionEnglish: "Classic egg flan with caramel.",
+      descriptionFrench: "Flan aux œufs classique avec du caramel.",
+      descriptionItalian: "Classico flan all'uovo con caramello.",
     },
   ];
 

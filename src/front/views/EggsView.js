@@ -3,6 +3,10 @@ import "../styles/views.css";
 import Card from "../components/Card";
 import { AppContext } from "../store/appContext.js";
 
+import huevosJamon from '../images/huevos-jamon.png';
+import huevosChorizo from '../images/huevos-chorizo.png';
+import huevosButifarra from '../images/huevos-butifarra.png';
+
 const EggsView = () => {
   const { store, actions } = useContext(AppContext);
 
@@ -20,7 +24,11 @@ const EggsView = () => {
         nameFrench: "avec Jambon Ibérique",
         nameItalian: "con Prosciutto Iberico",
         price: "9.50",
-        image: "./images/huevos-jamon.png",
+        image: huevosJamon,
+        descriptionSpanish: "Huevos rotos con delicioso jamón ibérico.",
+        descriptionEnglish: "Broken eggs with delicious Iberian ham.",
+        descriptionFrench: "Œufs cassés avec du délicieux jambon ibérique.",
+        descriptionItalian: "Uova rotte con delizioso prosciutto iberico.",
     },
     {
         nameSpanish: "con Choricitos",
@@ -28,7 +36,11 @@ const EggsView = () => {
         nameFrench: "avec Chorizos",
         nameItalian: "con Chorizo",
         price: "8.50",
-        image: "./images/huevos-chorizo.png",
+        image: huevosChorizo,
+        descriptionSpanish: "Huevos rotos acompañados de sabrosos choricitos.",
+        descriptionEnglish: "Broken eggs accompanied by tasty chorizos.",
+        descriptionFrench: "Œufs cassés accompagnés de savoureux chorizos.",
+        descriptionItalian: "Uova rotte accompagnate da gustosi chorizo.",
     },
     {
         nameSpanish: "con Butifarra Negra",
@@ -36,7 +48,11 @@ const EggsView = () => {
         nameFrench: "avec Saucisse",
         nameItalian: "con Salsiccia",
         price: "8.50",
-        image: "./images/huevos-butifarra.png",
+        image: huevosButifarra,
+        descriptionSpanish: "Huevos rotos con butifarra negra.",
+        descriptionEnglish: "Broken eggs with black sausage.",
+        descriptionFrench: "Œufs cassés avec saucisse noire.",
+        descriptionItalian: "Uova rotte con salsiccia nera.",
     }
 ];
 

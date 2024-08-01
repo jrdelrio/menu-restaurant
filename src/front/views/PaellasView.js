@@ -3,13 +3,17 @@ import "../styles/views.css";
 import Card from "../components/Card";
 import { AppContext } from "../store/appContext.js";
 
+import paellaMariscos from "../images/paella-mariscos.png";
+import paellaVegetales from "../images/paella-verduras.png";
+import arrozNegro from "../images/arroz-negro.png"
+
 const PaellasView = () => {
   const titles = {
     spanishTitle: "Paellas",
     englishTitle: "Paellas",
     frenchTitle: "Paëllas",
-    italianTitle: "Paelle"
-};
+    italianTitle: "Paelle",
+  };
 
   const { store, actions } = useContext(AppContext);
 
@@ -35,7 +39,11 @@ const PaellasView = () => {
       nameFrench: "Paella aux Fruits de Mer",
       nameItalian: "Paella di Frutti di Mare",
       price: "27.00",
-      image: "../image/paella-mariscos.png",
+      image: paellaMariscos,
+      descriptionSpanish: "Paella tradicional española con una variedad de mariscos frescos como gambas, mejillones y calamares.",
+      descriptionEnglish: "Traditional Spanish paella with a variety of fresh seafood such as prawns, mussels, and calamari.",
+      descriptionFrench: "Paella espagnole traditionnelle avec une variété de fruits de mer frais tels que des crevettes, des moules et des calamars.",
+      descriptionItalian: "Paella spagnola tradizionale con una varietà di frutti di mare freschi come gamberi, cozze e calamari.",
     },
     {
       nameSpanish: "Paella de Verduras",
@@ -43,7 +51,11 @@ const PaellasView = () => {
       nameFrench: "Paella Aux Légumes",
       nameItalian: "Paella di Verdure",
       price: "22.00",
-      image: "../image/paella-verduras.png",
+      image: paellaVegetales,
+      descriptionSpanish: "Paella vegetariana hecha con una variedad de verduras frescas y sabrosas.",
+      descriptionEnglish: "Vegetarian paella made with a variety of fresh and tasty vegetables.",
+      descriptionFrench: "Paella végétarienne faite avec une variété de légumes frais et savoureux.",
+      descriptionItalian: "Paella vegetariana fatta con una varietà di verdure fresche e gustose.",
     },
     {
       nameSpanish: "Arroz Negro",
@@ -51,19 +63,25 @@ const PaellasView = () => {
       nameFrench: "Riz Noir",
       nameItalian: "Riso Nero",
       price: "27.00",
-      image: "../image/arroz-negro.png",
+      image: arrozNegro,
+      descriptionSpanish: "Delicioso arroz negro cocinado con tinta de calamar y acompañado de mariscos.",
+      descriptionEnglish: "Delicious black rice cooked with squid ink and accompanied by seafood.",
+      descriptionFrench: "Délicieux riz noir cuit à l'encre de calmar et accompagné de fruits de mer.",
+      descriptionItalian: "Delizioso riso nero cotto con l'inchiostro di calamaro e accompagnato da frutti di mare.",
     },
 ];
 
 
   return (
     <>
-      <div className="title text-center py-4 bg-white">{defineTitle(titles)}</div>
+      <div className="title text-center py-4 bg-white">
+        {defineTitle(titles)}
+      </div>
       <div className="container pb-3rem">
         <div className="row mt-3">
           {paellasDB.map((paella, index) => (
             <div key={index} className="col-12 col-lg-12 col-md-6 mb-4">
-              <Card product={paella}/>
+              <Card product={paella} />
             </div>
           ))}
         </div>
