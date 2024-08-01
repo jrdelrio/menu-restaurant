@@ -5,7 +5,7 @@ import CartItemCard from "./CartItemCard";
 
 const OffCanvasCart = () => {
 
-    const { store, actions } = useContext(AppContext);
+    const { store } = useContext(AppContext);
     return(
         <div
         className="offcanvas offcanvas-start"

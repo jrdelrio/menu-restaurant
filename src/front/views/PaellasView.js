@@ -15,7 +15,7 @@ const PaellasView = () => {
     italianTitle: "Paelle",
   };
 
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const defineTitle = (titles) => {
     switch (store.language) {

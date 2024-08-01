@@ -37,7 +37,7 @@ import moscowMule from "../images/moscow-mule.png";
 import espressoMartini from "../images/espresso-martini.png";
 
 const DrinksView = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const titles = {
     title: {

@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import { AppContext } from "../store/appContext.js";
 
 const WinesView = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const titles = {
     spanishTitle: "Vinos",

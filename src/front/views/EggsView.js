@@ -8,7 +8,7 @@ import huevosChorizo from '../images/huevos-chorizo.png';
 import huevosButifarra from '../images/huevos-butifarra.png';
 
 const EggsView = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const titles = {
     spanishTitle: "Huevos Rotos",

@@ -7,7 +7,7 @@ import { AppContext } from "../store/appContext.js";
 import OffCanvasCart from "../components/OffCanvasCart"
 
 const Home = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   return (
     <div className="wrapper">

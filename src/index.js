@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import Home from './front/components/Home';
 import reportWebVitals from './reportWebVitals';
 
-import AppProvider from "./front/store/appContext.js"; // Import your context provider
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

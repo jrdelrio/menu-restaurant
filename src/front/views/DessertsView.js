@@ -11,7 +11,7 @@ import churrosChocolate from '../images/churros-chocolate.png';
 import flanHuevo from '../images/flan-huevo.png';
 
 const DessertsView = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const titles = {
     spanishTitle: "Postres",

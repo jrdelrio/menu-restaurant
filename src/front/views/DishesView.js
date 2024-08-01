@@ -22,7 +22,7 @@ import panImg from "../images/pan.png";
 import olivasImg from "../images/olivas.png";
 
 const DishesView = () => {
-  const { store, actions } = useContext(AppContext);
+  const { store } = useContext(AppContext);
 
   const titles = {
     spanish: "Platos Principales",
