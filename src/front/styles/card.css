@@ -44,3 +44,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.food-img-main-card {
+    height: 8rem;
+    object-fit: contain;
+}

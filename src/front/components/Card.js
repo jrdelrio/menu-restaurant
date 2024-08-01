@@ -9,12 +9,6 @@ const Card = (props) => {
 
   const [infoShow, setInfoShow] = useState(false);
 
-  const [image, setImage] = useState(undefined);
-
-  useEffect(() => {
-    setImage(props.product.image);
-  }, []);
-
   const defineLanguage = (dish) => {
     switch (store.language) {
       case "spanish":
@@ -49,14 +43,14 @@ const Card = (props) => {
     actions.addItemToCart(props.product);
   };
 
-  if (image) {
+
     return (
       <>
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src={image}
+                src={props.product.image}
                 className="img-fluid rounded-start w-100 food-img-main-card"
                 alt={defineLanguage(props.product)}
               />
@@ -104,10 +98,6 @@ const Card = (props) => {
         </div>
       </>
     );
-  } else
-  return (
-    <Spinner />
-  );
 };
 
 export default Card;

@@ -6,9 +6,9 @@ import { AppContext } from "../store/appContext.js";
 import cremaCatalana from '../images/crema-catalana.png';
 import strudel from '../images/strudel.png';
 import helado from '../images/helado.png';
-import tartaSantiago from '../images/tarta-santiago.jpeg';
-import churrosChocolate from '../images/churros-chocolate.jpeg';
-import flanHuevo from '../images/flan-huevo.jpeg';
+import tartaSantiago from '../images/tarta-santiago.png';
+import churrosChocolate from '../images/churros-chocolate.png';
+import flanHuevo from '../images/flan-huevo.png';
 
 const DessertsView = () => {
   const { store, actions } = useContext(AppContext);
